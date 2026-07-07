@@ -33,11 +33,11 @@ import os
 from PDFsplitter import *
 from pathlib import Path
 
-FileName = "EDS0027DifferenceReport"
+FileName = "ENTER_FILE_NAME"
 fullFileName = FileName + ".docx"
-diffDoc = new_document("0028 EDS Difference report", FileName)
-folder_1 = FullPDF_to_SplitTXT("0028_V1.pdf", "EDS_0027_V1_folder")
-folder_2 = FullPDF_to_SplitTXT("0028_V2.pdf", "EDS_0027_V2_folder")
+diffDoc = new_document("ENTER TITLE FOR REPORT DOCUMENT", FileName)
+folder_1 = FullPDF_to_SplitTXT("DOC2COMPARE_V1.pdf", "V1_folder")
+folder_2 = FullPDF_to_SplitTXT("DOC2COMPARE_V2.pdf", "V2_folder")
 
 Files_1 = [file for file in folder_1.iterdir() if file.is_file()]
 Files_2 = [file for file in folder_2.iterdir() if file.is_file()]
